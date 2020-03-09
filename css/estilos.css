@@ -1,0 +1,322 @@
+* {
+  margin: 0px; }
+
+body {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.titulo {
+  height: 400px;
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .titulo .wallpaper {
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    max-width: 1024px;
+    overflow: hidden; }
+  .titulo h1 {
+    font-size: 100px;
+    font-family: 'Righteous', cursive;
+    color: white; }
+
+.menu .menu__contenedor {
+  position: sticky;
+  /*no funciona*/
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  border-width: 1px;
+  align-content: center; }
+  .menu .menu__contenedor form {
+    display: flex; }
+    .menu .menu__contenedor form button {
+      background-color: #346ea3;
+      width: 18%;
+      border-style: none;
+      color: white; }
+      .menu .menu__contenedor form button:hover {
+        background-color: #6ba3d6; }
+    .menu .menu__contenedor form input {
+      width: 80%;
+      border: solid;
+      border-width: 1px;
+      border-color: grey;
+      font-family: "Montserrat", sans-serif; }
+  .menu .menu__contenedor ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: space-around; }
+    .menu .menu__contenedor ul li {
+      padding: 30px;
+      list-style: none;
+      text-decoration: none; }
+      .menu .menu__contenedor ul li:hover {
+        background-color: lightgrey;
+        height: 100px; }
+    .menu .menu__contenedor ul a {
+      font-style: none;
+      text-decoration: none;
+      color: black; }
+  .menu .menu__contenedor .menu__contenedor__logo {
+    display: inline-block;
+    width: 200%;
+    padding: 7px;
+    background-color: #346ea3; }
+
+/*section .row {
+	background-color: white;
+	padding: 30px;
+	.preguntas {
+			padding: 30px;
+			font-size: 18px;
+		}
+	aside {
+			background-color: #6ba3d6;
+			padding: 20px;
+			margin:30px;
+			img{
+				width: 100%;
+				padding: 10px;
+			}
+			h2 {
+					color: white;
+					font-size: 30px;
+					justify-content: right;
+					display: flex;
+					justify-content: flex-end;
+					font-family: $titulo;
+
+			}
+			p {
+		
+				line-height: 25px;
+				margin:20px;
+				text-align: justify;
+					}
+
+	}
+
+}*/
+a {
+  text-decoration: none;
+  color: black; }
+
+p, h2, h3, li, form, table, label {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.0; }
+
+footer {
+  background-color: white; }
+
+/*opciones de excursiones */
+#excursiones {
+  margin: 30px 0; }
+  #excursiones h4 {
+    font-family: "Montserrat", sans-serif; }
+  #excursiones .excursiones__subtitle {
+    font-size: 40px; }
+  #excursiones .excursiones__subtitle__excursionesopc {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 15px;*/ }
+    #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones {
+      height: 100%;
+      padding: 30px;
+      background-color: lightgrey; }
+      #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin-bottom: 10px;
+        font-size: 13px; }
+      #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones h3 {
+        line-height: 40px; }
+      #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones img {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 40px; }
+      #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones button {
+        align-content: center;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        padding: 5px;
+        background-color: #346ea3;
+        border: none;
+        height: 40px;
+        width: 80px;
+        margin: 10px; }
+        #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones button:hover {
+          background-color: #6ba3d6; }
+      #excursiones .excursiones__subtitle__excursionesopc .excursiones__subtitle__excursionesopciones .reservrbutt {
+        align-items: center; }
+
+/*reservas*/
+#reservar {
+  margin: 30px 0;
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between; }
+  #reservar fieldset {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    border: solid; }
+  #reservar legend {
+    color: black;
+    font-size: 40px;
+    margin-left: 40px;
+    line-height: 30px; }
+  #reservar .variablesboton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 30px 40px; }
+    #reservar .variablesboton button {
+      width: 15em;
+      cursor: pointer;
+      border-radius: 0px;
+      color: white;
+      border: solid;
+      border-width: 1px;
+      height: 50px;
+      font-size: 15px;
+      background-color: black;
+      font-family: "Montserrat", sans-serif;
+      padding: 10px; }
+      #reservar .variablesboton button:hover {
+        background-color: #EF927A; }
+  #reservar input {
+    flex-direction: row;
+    border: solid;
+    border-width: 1px;
+    width: 91.5%;
+    height: 50px;
+    font-size: 15px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    margin: 10px 40px 20px 40px; }
+  #reservar .button {
+    width: 230px;
+    padding-left: none;
+    background-color: #346ea3;
+    border: none;
+    color: blanco; }
+    #reservar .button:hover {
+      background-color: #6ba3d6; }
+
+section {
+  justify-content: center; }
+  section .preguntas {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    height: 100%;
+    padding: 30px;
+    align-items: space-around;
+    justify-content: space-around; }
+    section .preguntas iframe {
+      width: 100%;
+      height: 45%;
+      align-items: bottom; }
+  section .nosotros {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #6ba3d6; }
+    section .nosotros h2 {
+      font-family: "Righteous", cursive;
+      font-size: 2.7em;
+      color: #346ea3;
+      line-height: 30px; }
+    section .nosotros img {
+      width: 100%;
+      padding: 10px 0; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /*social media*/ }
+  footer .btn-primary {
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    border: solid;
+    border-width: 1px;
+    margin: 30px 0;
+    width: 40%;
+    border: solid;
+    border-width: 1px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    visibility: visible;
+    opacity: 1; }
+    footer .btn-primary:hover {
+      background-color: #EF927A;
+      border: none; }
+      footer .btn-primary:hover .translate:hover {
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(20px);
+        transition: all 2s; }
+    footer .btn-primary .fa-long-arrow-alt-right {
+      position: relative;
+      padding-left: 20px;
+      top: 5px;
+      color: black;
+      font-size: 30px; }
+  footer .modal-content {
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif;
+    border-width: 5px; }
+    footer .modal-content .modal-body {
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      flex-direction: columns;
+      margin-left: 40px; }
+      footer .modal-content .modal-body label {
+        width: 100px;
+        font-size: 18px; }
+      footer .modal-content .modal-body input {
+        align-items: center;
+        width: 250px; }
+      footer .modal-content .modal-body .form-group {
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        flex-direction: column; }
+    footer .modal-content .modal-footer button {
+      border: none;
+      border-radius: 0;
+      background-color: #EF927A;
+      width: 30%; }
+      footer .modal-content .modal-footer button:hover {
+        background-color: #6ba3d6; }
+  footer .socialmedia {
+    width: 30%;
+    display: flex;
+    justify-content: space-around; }
+    footer .socialmedia i:hover {
+      color: #EF927A; }
+
+/*# sourceMappingURL=estilos.css.map */
